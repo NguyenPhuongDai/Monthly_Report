@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: #333;
+}
+
+.chart{
+    width: 600px;
+    display: block;
+    margin: 50px auto;
+}
+
+.numbers{
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 100%;
+    display: inline-block;
+    float: left;
+}
+
+.numbers li{
+    list-style: none;
+    height: 50px;
+    position: relative;
+    bottom: 0;
+}
+
+.numbers span{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
+
+.bars{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    background: #555;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0 10px 0 #555;
+    border-radius: 5px;
+}
+
+.bars li{
+    display: table-cell;
+    width: 100px;
+    height: 300px;
+    position: relative;
+}
+
+.bars span{
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+}
+
+.bars .bar {
+    display: block;
+    background: #17C0EB;
+    width: 40px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 25px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(23, 192, 235, 0.5);
+    transition: 0.6s;
+    transition-property: background, box-shadow;
+}
+
+.bars .bar:hover{
+    background: #55EFC4;
+    box-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    cursor: pointer;
+}
+
+.bars .bar:before{
+    color: #fff;
+    content: attr(data-vnd) 'đ';
+    position: relative;
+    bottom: 20px;
+
+}
+
+.buttons {
+    align-items: center;
+    width: 300px;
+    height:0;
+    display: block;
+    margin: 50px auto 0 auto;
+    
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    list-style: none;
+    word-spacing: 400px;
+    font-weight: bold;
+}
+
+.sum{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.price{
+    display: inline-block;
+    margin: 0;
+}
+
+.categ{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+}
